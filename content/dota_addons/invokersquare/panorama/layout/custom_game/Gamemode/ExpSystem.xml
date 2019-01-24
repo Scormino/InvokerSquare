@@ -1,0 +1,23 @@
+<root>
+	<styles>
+		<include src="file://{resources}/styles/Gamemode/CustomHud.css" />
+	</styles>
+	<scripts>
+		<include src="file://{resources}/scripts/BaseLib/utils.js" />
+	</scripts>
+  <Panel class="InventoryExp">
+    <Panel id="PanelInventoryExpInfo">
+      <Panel id='PanelSliderInventoryExpBlack' class='ShowPossibility'>
+        <DOTASettingsSlider id="DOTASliderInventoryExp" min="0" max="1" default="1"/>
+      </Panel>
+      <Panel id="PanelInventoryExpDynamicInfo">
+        <Label id='LabelInventoryExpPerSec' class='LabelExp' text='? exp/sec'/>
+      </Panel>
+    </Panel>
+    <Panel id='PanelInventoryExpCurrentFactor'>
+      <Label id='LabelInventoryExpCurrentFactor' class='LabelExp' text='?%'/>
+    </Panel>
+  </Panel>
+</root>
+
+

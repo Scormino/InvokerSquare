@@ -1,0 +1,20 @@
+"AddonInfo"
+
+{
+	
+	"maps"  "flat"
+
+	"TeamCount"  "10"
+	
+	"IsPlayable" "1"
+
+
+	"flat"
+ 
+	{
+  		
+		"MaxPlayers" "10"
+ 	
+	}
+ 	
+}

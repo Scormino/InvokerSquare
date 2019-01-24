@@ -1,0 +1,26 @@
+<root>
+	<scripts>
+		<include src="file://{resources}/scripts/BaseLib/utils.js" />
+		<include src="file://{resources}/scripts/manifest.js" /> 
+
+		<!--include src="file://{resources}/scripts/Tooltips/ToolTipConstants.js"/>
+		<include src="file://{resources}/scripts/Tooltips/Tooltip.js"/-->
+	</scripts>
+	<Panel>
+		<!--CustomUIElement  type = "GameSetup"  layoutfile = "file://{resources}/layout/custom_game/setup.xml"  /-->
+		<CustomUIElement type="GameSetup" layoutfile="file://{resources}/layout/custom_game/team_select.xml" />
+		
+		<CustomUIElement  type = "HudTopBar"  layoutfile = "файл: // {resources} /layout/custom_game/multiteam_top_scoreboard.xml"  />		
+		
+		<CustomUIElement type="HudTopBar"           layoutfile="file://{resources}/layout/custom_game/multiteam_top_scoreboard.xml" />
+		<CustomUIElement type="FlyoutScoreboard"    layoutfile="file://{resources}/layout/custom_game/multiteam_flyout_scoreboard.xml" />
+		<CustomUIElement type="EndScreen"           layoutfile="file://{resources}/layout/custom_game/multiteam_end_screen.xml" />
+		
+		
+		<CustomUIElement type="Hud" layoutfile="file://{resources}/layout/custom_game/Gamemode/CustomHud.xml" />
+	
+		<CustomUIElement type="Hud" layoutfile="file://{resources}/layout/custom_game/Gamemode/QWERSystem.xml" />
+		<CustomUIElement type="Hud" layoutfile="file://{resources}/layout/custom_game/Tooltips/AbilityTooltip.xml" />
+	</Panel>
+</root>
+

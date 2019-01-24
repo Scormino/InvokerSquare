@@ -1,0 +1,92 @@
+<root>
+	<styles>
+		<include src="s2r://panorama/styles/dotastyles.vcss_c" />
+		<include src="file://{resources}/styles/Tooltips/CustomTooltips.css" />
+
+	</styles>
+	<scripts>
+		<include src="file://{resources}/scripts/BaseLib/utils.js" />
+		<include src="file://{resources}/scripts/Tooltips/ToolTipConstants.js"/>
+		<include src="file://{resources}/scripts/Tooltips/Tooltip.js"/>
+	</scripts>
+	<snippets>
+		<snippet name="DefaultTitleLevel">
+			<Panel class="PanelTitleLevel"/>
+		</snippet>
+		<snippet name="DefaultPanelLevel">
+			<Panel class="PanelLevel">
+				<Panel id="PanelImageLevel">
+					<DOTAAbilityImage id="ImageLevel"/>
+				</Panel>
+				<Panel id="PanelLabelAbilityLevelByHero">
+					<Label id="LabelAbilityLevelByHero"/>
+				</Panel>
+				<Panel id="PanelLabelAddAbilityLevel">
+					<!--Label id="LabelPlus" text="+"/-->
+					<Label id="LabelAddAbilityLevel" class="AddPlus"/>
+				</Panel>
+			</Panel>
+		</snippet>
+		<snippet name="DefaultStatsBlock">
+			<Panel class="DefaultStatsBlock">
+				<Panel id="PanelCaption">
+					<Label id="LabelCapion"/>
+				</Panel>
+				<Panel id="PanelShell" class="DefaultShell">
+					<Label id="LabelValue" class="DefaultStatsValue"/>
+				</Panel>
+				<Panel id="PanelMeasure">
+					<Label id="LabelMeasure"/>
+				</Panel>
+			</Panel>
+		</snippet>
+
+		<snippet name="DefaultImageBlock">
+			<Panel class="DefaultImageBlock">
+				<Panel id="PanelPreText" class='LabelStats'>
+					<Label id="LabelCapion" class='LabelStats'/>
+				</Panel>
+				<Panel id="PanelImageContainer">
+					<DOTAAbilityImage id="AbilImage"/>
+				</Panel>
+				<Panel id="PanelPostText" class='LabelStats'>
+					<Label id="LabelCapion" class='LabelStats'/>
+				</Panel>
+			</Panel>
+		</snippet>
+
+
+		<snippet name="RequirementBlock">
+			<Panel class="DefaultRequirement">
+				<Panel id="PanelCooldown" class='CenterState'>
+					<Image id="ImageCooldown" class='CenterState' src="s2r://panorama/images/status_icons/ability_cooldown_icon_psd.vtex"/>
+				</Panel>
+				<Panel id="PanelManaCost" class='CenterState'>
+					<Image id="ImageManaCost" class='CenterState' src="s2r://panorama/images/status_icons/ability_manacost_icon_psd.vtex"/>
+				</Panel>
+			</Panel>
+		</snippet>
+	</snippets>
+	<Panel class="TooltipRoot" ontooltiploaded="SetTooltipInGame()">
+		<!--Panel id="TooltipPreRoot"/-->
+		<Panel id="TooltipArea"/>
+	</Panel>
+</root>
+			<!--Panel id="PanelTitle" class="DefaultTitle">
+				<Label id="LabelTitle" text="LabelTitle"/>
+			</Panel>
+			<Panel id="PanelBehavior" class="DefaultBehavior">
+				<Label id="LabelBehavior" text="LabelBehavior"/>
+			</Panel>
+			<Panel id="PanelDescription" class="DefaultDescription">
+				<Label id="LabelDescription" text="LabelDescription"/>
+			</Panel>
+			<Panel id="PanelStats" class="DefaultStats">
+				<Label id="LabelStats" text="LabelStats"/>
+			</Panel>
+			<Panel id="PanelAlt" class="DefaultAlt">
+				<Label id="LabelAlt" text="LabelAlt"/>
+			</Panel>
+			<Panel id="PanelLore" class="DefaultLore">
+				<Label id="LabelLore" text="LabelLore"/>
+			</Panel-->

@@ -1,0 +1,345 @@
+.ChildrenDown{flow-children: down;}
+.TooltipRoot
+{
+	flow-children: right-wrap;	
+	//border-radius: 15px;
+}
+	.DefaultArea
+	{
+		max-width: 350px;
+		//width: 600px;
+		//min-width: 395px;
+		flow-children: down;
+	}
+	.DefaultSupp
+	{
+		//width: 100%;
+	}
+		.DefaultTitle
+		{
+			flow-children: right-wrap;
+			width: 100%;
+		}
+			.PanelFormula
+			{
+				flow-children: right-wrap;
+			}
+				.PanelFormulaElement
+				{
+					width: 25px;
+					height: 25px;
+					background-color: rgba(0,0,0,0.5);
+					border: 1px solid rgb(0,0,0);
+					border-radius: 5px;
+
+				}
+					.LabelFormulaElement
+					{
+						font-size: 21;
+						vertical-align: center;
+						horizontal-align: center;
+					}
+
+			.PanelTitle
+			{
+				margin-left: 10px;
+				margin-right: 10px;
+
+			}
+				.LabelTitle
+				{
+					font-size: 19;
+					font-weight: bold;
+					line-height: 0px;
+				}
+
+			.PanelTitleLevel
+			{
+				horizontal-align: right;
+				flow-children: right-wrap;
+			}
+				.PanelLevel
+				{
+					height: 25px;
+
+					padding: 0px 5px 0px 0px;
+					background-color: rgba(0,0,0,0.6);
+					flow-children: right;
+					border: 1px solid rgb(0,0,0);
+					border-radius: 5px;
+				}
+				#ImageLevel
+				{
+					height: 25px;
+					width: 25px;
+
+					border-radius: 2px;
+				}
+				#PanelLabelAbilityLevelByHero
+				{
+					//height: 25px;
+					//width: 25px;
+					margin-left: 5px;
+					line-height: 0px;
+				}
+					#LabelAbilityLevelByHero{
+						font-size: 20;
+						vertical-align: center;
+						font-weight: bold;
+						line-height: 0px;
+					}
+					#LabelPlus
+					{
+						font-size: 20;
+						font-weight: bold;
+						vertical-align: center;
+						color: rgb(0,255,0);
+						line-height: 0px;
+					}
+				#PanelLabelAddAbilityLevel{
+					margin-left: 2px;
+					vertical-align: center;
+					flow-children: right;
+				}
+					#LabelAddAbilityLevel
+					{
+						font-size: 20;
+						font-weight: bold;
+						
+						line-height: 0px;
+					}
+						.AddPlus
+						{
+							color: rgb(0,255,0);
+						}
+						.AddMinus
+						{
+							color: rgb(255, 35, 35);
+						}
+
+		.DefaultBehavior
+		{
+			width: 100%;
+			border-top: 1px solid rgb(41,53,59);
+			border-bottom: 1px solid rgb(41,53,59);	
+			flow-children: down;
+		}
+			.LabelBehavior
+			{
+				font-size: 17;
+				font-weight: bold;
+				color: rgb(89,109,136);
+				line-height: 0px;
+			}
+		.DefaultDescription
+		{
+
+			margin-top: 5px;
+			flow-children: down;
+			
+			//border-radius: 2px;
+			//border-top: 1px solid rgb(41,53,59);
+		}
+			.LabelDescription
+			{
+				font-size: 16;
+				font-family: 'Comic Sans MS';
+				color: rgb(154,176,205);
+
+				//line-height: 0px;
+			}
+		.DefaultStats
+		{
+			max-height: 250px;
+
+			
+			width: 100%;
+			margin-top: 5px;
+			background-color: rgba(0,0,0,0.6);
+			padding: 5px 5px 15px 5px;
+			flow-children: down;
+			border-radius: 5px;
+			overflow: scroll;
+			
+		}
+			#PanelCaption
+			{
+				//background-color: white;
+				vertical-align: center;
+			}
+			.LabelStats
+			{
+				font-size: 17;
+				font-family: 'Comic Sans MS';
+				color: rgb(174,196,225);
+				vertical-align: center;
+			}
+			.DefaultStatsBlock
+			{
+				//background-color: blue;
+				flow-children: right-wrap;
+				
+			}
+				#PanelShells
+				{
+					vertical-align: center;
+					
+					margin-left: 0px;
+					margin-right: 2px;
+					flow-children: right-wrap;	
+					
+				}
+				.DefaultShell
+				{
+					border: 1px solid rgb(0,0,0);
+					padding: 0px 1px -5px 2px;
+					vertical-align: center;
+					border-radius: 5px;
+				}
+				.DefaultShell_Const
+				{
+					//background-color: rgba(255,255,255,0);
+					//padding: -1px 0px -3px 4px;
+					border: 0px solid rgb(0,0,0);
+				}
+				.DefaultShell_level
+				{
+					background-color: rgba(255, 230, 0, 0.4);
+				}
+				.DefaultShell_invoker_quantum
+				{
+					background-color: rgba(0,255,0,0.4);
+				}
+				.DefaultShell_invoker_warp
+				{
+					background-color: rgba(25,25,255,0.7);
+				}
+				.DefaultShell_invoker_expanse
+				{
+					background-color: rgba(255,20,20,0.65);
+				}
+				.DefaultShell_invoker_recontsruction
+				{
+					background-color: rgba(255, 255, 255, 0.7);
+				}				
+					.DefaultStatsValue
+					{
+						font-size: 18;
+						color: white; 	
+						font-weight: bold;
+						vertical-align: center;
+						horizontal-align: center;
+						
+					}
+					.DefaultStatsGreen
+					{
+						font-size: 17;
+						color: rgb(112,234,114);
+						font-weight: bold;
+					}
+					.DefaultStatsRed
+					{
+						font-size: 17;
+						color: rgb(204,0,0);
+						font-weight: bold;
+					}
+					.DefaultStatsDamageTypePhysical
+					{
+						font-size: 17;
+						color: rgb(113,169,234);
+						font-weight: bold;
+					}
+					.DefaultStatsDamageTypeMagic
+					{
+						font-size: 17;
+						color: rgb(191,101,153);
+						font-weight: bold;
+					}
+					.DefaultStatsDamageTypePure
+					{
+						font-size: 17;
+						color: rgba(255, 0, 0, 0.85);
+						font-weight: bold;
+					}
+			.DefaultImageBlock
+			{
+				flow-children: right-wrap;
+			}
+				#PanelImageContainer
+				{
+					height: 35px;
+					width: 35px;
+					border-radius: 10px;
+				}
+					#AbilImage
+					{
+						height: 100%;
+						width: 100%;
+					}
+
+
+		.DefaultAlt
+		{
+			width: 100%;
+			margin-top: 10px;
+			background-color: rgb(122,139,153);
+			flow-children: down;
+			border-radius: 2px;
+		}
+			.LabelAlt
+			{
+				margin-left: 5px;
+				margin-top: 5px;
+				margin-right: 5px;
+				margin-bottom: 5px;
+				font-size: 16;
+				font-weight: normal;
+				font-family: "fantasy";
+				color: rgb(0,0,0);
+				line-height: 0px;
+			}
+
+		.DefaultRequirement{
+			width: 100%;
+			margin-top: 10px;
+			flow-children: right-wrap;
+		}
+			.CenterState{
+				vertical-align: center;
+			}
+			#PanelCooldown{
+				flow-children: right;
+			}
+			#PanelManaCost{
+				margin-left: 5px;
+				flow-children: right;
+			}
+			.RequirementLabel
+			{
+				vertical-align: center;
+				margin-left: 3px;
+				line-height: 0px;
+			}
+
+		.DefaultLore
+		{
+			width: 100%;
+			margin-top: 10px;
+			background-color: rgb(11,18,21);
+			flow-children: down;
+			padding: 5px 5px 5px 5px;
+			border-radius: 2px;
+		}
+			.LabelLore
+			{
+				font-size: 14;
+				font-style: "italic";
+				font-family: "Comic Sans MS";
+				color: rgb(61,78,91);
+				line-height: 0px;
+			}
+
+#PanelMeasure
+{
+	vertical-align: center;
+}

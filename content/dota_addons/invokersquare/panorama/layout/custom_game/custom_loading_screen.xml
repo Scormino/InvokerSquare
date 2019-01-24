@@ -1,0 +1,29 @@
+<!--
+  Сначала читается Этот фаил
+  Оттуда и запускается этот скрипт
+
+  Независимые стадии:
+  1)C: DOTA_GAME_UI_STATE_LOADING_SCREEN
+    custom_loading_screen.xml
+
+  1.5)S: DOTA_GAMERULES_STATE_INIT
+    Сервер инициализирует свои .lua скрипты
+
+  2)C: DOTA_GAMERULES_STATE_INIT
+    custom_ui_manifest.xml
+
+  2.5)(S:Gamerules: entering state 'DOTA_GAMERULES_STATE_CUSTOM_GAME_SETUP')
+  3)C: DOTA_GAMERULES_STATE_CUSTOM_GAME_SETUP
+    setup.xml
+
+-->
+
+<root>
+  <scripts>
+		<include src="file://{resources}/scripts/BaseLib/utils.js" />
+    <include src="file://{resources}/scripts/BaseLib/loading_screen.js" /> 
+  </scripts>
+  <Panel>
+    <!--DOTAHotkey id="HotkeyShopPress" keybind="ShopPress" onactivate="ShopPress" /-->
+  </Panel>
+</root>

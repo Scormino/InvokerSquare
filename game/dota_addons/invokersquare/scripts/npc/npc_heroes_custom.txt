@@ -1,0 +1,95 @@
+// Dota Heroes File
+// NOTE: This is not for creating new heroes, this is for taking a currently existing hero as a template and overriding
+// the specified key-value combinations.  Use override_hero <hero_to_override> for this.
+"DOTAHeroes"
+{
+	//=================================================================================================================
+	// HERO: Invoker
+	//=================================================================================================================
+	"npc_dota_hero_invoker"
+	{
+		//"Model"				"models/invoker/invoker_reference" // Model.
+		"ModelScale"			"0.740000" //"1.000000"	//"0.740000"	
+
+		// Bounds
+		//"ProjectileCollisionSize"	"1"
+		//"RingRadius"							"90"
+		//"HealthBarOffset"					"200"
+
+
+
+		"Model"					"models/heroes/invoker/invoker.vmdl"
+		"Portrait"				"vgui/hud/heroportraits/portrait_furion"
+		"IdleExpression"		"scenes/invoker/invoker_exp_idle_01.vcd"
+		"SoundSet"				"Hero_Invoker"
+		"IdleSoundLoop"			"Hero_Invoker.IdleLoop"
+
+		//"GameSoundsFile"		"soundevents/game_sounds_heroes/game_sounds_alchemist.vsndevts"
+		//"VoiceFile"			"soundevents/voscripts/game_sounds_vo_alchemist.vsndevts"
+
+		"AttackRate"			"0"			//перезарядка, после выпуска снаряда
+		"AttackAnimationPoint"	"0"	//"анимация атаки" - обязательное время, перед выпуском снаряда из состояния готовности
+
+		"AttackDamageMin"		"0"
+		"AttackDamageMax"		"0"
+		"ProjectileModel"		"particles/units/heroes/hero_invoker/invoker_base_attack.vpcf"
+		"ProjectileSpeed"		"0"			//скорость полёта снаряда
+		"AttackRange"			"0"
+		"MovementSpeed"			"0"	
+		"MovementTurnRate"		"0.900000"	//скорость поворота
+
+		"ArmorPhysical"			"0"//"-2.85"
+		"MagicalResistance"     "0"
+
+		"AttributePrimary"		"DOTA_ATTRIBUTE_INTELLECT"	//Основной атрибут
+
+		//"AttributeBaseStrength"		"15"
+		//"AttributeStrengthGain"		"2.000000"
+		//"AttributeBaseAgility"		"20"
+		//"AttributeAgilityGain"		"2.000000"
+		//"AttributeBaseIntelligence"		"24"
+		//"AttributeIntelligenceGain"		"3.000000"
+		"AttributeBaseStrength"			"0"
+		"AttributeStrengthGain"			"0"
+		"AttributeBaseAgility"			"0"
+		"AttributeAgilityGain"			"0"
+		"AttributeBaseIntelligence"		"0"
+		"AttributeIntelligenceGain"		"0"
+
+		"StatusHealth"						"1"
+		"StatusHealthRegen"				"0.0000000000000000000000000000"
+		"StatusMana"							"1"
+		"StatusManaRegen"					"0.0000000000000000000000000000"
+
+		"VisionDaytimeRange"			"1350"										// Range of vision at night time.
+		"VisionNighttimeRange"			"1350"										// Range of vision at night time.
+		"BountyXP"						"0"
+
+		"AbilityLayout"					"6"
+
+		"Ability1"		""	//"invoker_quantum"
+		"Ability2"		""	//"invoker_warp"
+		"Ability3"		""	//"invoker_expanse"
+		"Ability4"		""	//"invoker_empty1"
+		"Ability5"		""	//"invoker_empty2"
+		"Ability6"		""	//"invoker_reconstruction"
+		"Ability7"		""
+		"Ability8"		""
+		"Ability9"		""
+		"Ability10"		""
+		"Ability11"		""
+		"Ability12"		""
+		"Ability13"		""
+		"Ability14"		""
+		"Ability15"		""
+		"Ability16"		""
+		"Ability17"		""
+		"Ability18"		""
+		"Ability19"		""
+		"Ability20"		""
+		"Ability21"		""
+		"Ability22"		""
+		"Ability23"		""
+		"Ability24"		""
+	}
+}

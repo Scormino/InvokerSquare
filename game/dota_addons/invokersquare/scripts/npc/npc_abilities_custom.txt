@@ -1,0 +1,264 @@
+// Dota Heroes File
+
+"DOTAAbilities"
+{
+	"Version"		"1"
+
+	"invoker_quantum"
+	{
+		"BaseClass"            		"ability_lua"
+		"ScriptFile"							"AddonScripts/spells/spheres/Q/invoker_quantum.lua"
+
+		"AbilityBehavior"					"DOTA_ABILITY_BEHAVIOR_NO_TARGET | DOTA_ABILITY_BEHAVIOR_IMMEDIATE | DOTA_ABILITY_BEHAVIOR_IGNORE_CHANNEL | DOTA_ABILITY_BEHAVIOR_UNRESTRICTED | DOTA_ABILITY_BEHAVIOR_IGNORE_PSEUDO_QUEUE | DOTA_ABILITY_BEHAVIOR_AUTOCAST"
+		"AbilityTextureName"  		"invoker_quantum"
+		"SpellDispellableType"		"SPELL_DISPELLABLE_NO"
+		"MaxLevel"								"9"
+		"RequiredLevel"						"-99"
+
+		"AbilityCooldown"					"0"
+		"AbilityManaCost"					"0"
+	}
+
+	"invoker_warp"
+	{
+		"BaseClass"             	"ability_lua"
+		"ScriptFile"							"AddonScripts/spells/spheres/W/invoker_warp.lua"
+
+		"AbilityBehavior"					"DOTA_ABILITY_BEHAVIOR_NO_TARGET | DOTA_ABILITY_BEHAVIOR_IMMEDIATE | DOTA_ABILITY_BEHAVIOR_IGNORE_CHANNEL | DOTA_ABILITY_BEHAVIOR_UNRESTRICTED | DOTA_ABILITY_BEHAVIOR_IGNORE_PSEUDO_QUEUE | DOTA_ABILITY_BEHAVIOR_AUTOCAST"
+		"AbilityTextureName"   		"invoker_warp"
+		"SpellDispellableType"		"SPELL_DISPELLABLE_NO"
+		"MaxLevel"								"9"
+		"RequiredLevel"						"-99"
+
+		"AbilityCooldown"					"0"
+		"AbilityManaCost"					"0"
+	}
+
+	"invoker_expanse"
+	{
+		"BaseClass"            		"ability_lua"
+		"ScriptFile"							"AddonScripts/spells/spheres/E/invoker_expanse.lua"
+
+		"AbilityBehavior"					"DOTA_ABILITY_BEHAVIOR_NO_TARGET | DOTA_ABILITY_BEHAVIOR_IMMEDIATE | DOTA_ABILITY_BEHAVIOR_IGNORE_CHANNEL | DOTA_ABILITY_BEHAVIOR_UNRESTRICTED | DOTA_ABILITY_BEHAVIOR_IGNORE_PSEUDO_QUEUE | DOTA_ABILITY_BEHAVIOR_AUTOCAST"
+		"AbilityTextureName"  		"invoker_expanse"
+		"SpellDispellableType"		"SPELL_DISPELLABLE_NO"
+		"MaxLevel"								"9"
+		"RequiredLevel"						"-99"
+
+		"AbilityCooldown"					"0"
+		"AbilityManaCost"					"0"
+
+
+	}
+	
+	"invoker_reconstruction"
+	{
+		"BaseClass"          			"ability_lua"
+		"ScriptFile"							"AddonScripts/spells/R/invoker_reconstruction.lua"
+
+		"AbilityType"							"DOTA_ABILITY_TYPE_ULTIMATE"
+		"AbilityBehavior"					"DOTA_ABILITY_BEHAVIOR_NO_TARGET | DOTA_ABILITY_BEHAVIOR_IMMEDIATE | DOTA_ABILITY_BEHAVIOR_IGNORE_CHANNEL | DOTA_ABILITY_BEHAVIOR_UNRESTRICTED | DOTA_ABILITY_BEHAVIOR_IGNORE_PSEUDO_QUEUE | DOTA_ABILITY_BEHAVIOR_AUTOCAST"
+	 	"AbilityTextureName"  		"invoker_reconstruction"
+		"SpellDispellableType"		"SPELL_DISPELLABLE_NO"
+		"MaxLevel"								"4"
+		"RequiredLevel"						"-3"
+
+		"AbilityCooldown"					"0"//"7 4 1 0"
+		"AbilityManaCost"					"0"//"55 40 25 10"
+	}
+		"invoker_reconstruction_void"
+		{
+			"BaseClass"              "ability_datadriven"
+			"AbilityBehavior"        "DOTA_ABILITY_BEHAVIOR_NO_TARGET | DOTA_ABILITY_BEHAVIOR_NOT_LEARNABLE"
+			"AbilityTextureName" 			"invoker_empty1"
+			"MaxLevel" 								"0"
+		}
+		"invoker_reconstruction_empty"
+		{
+			"BaseClass"              	"ability_datadriven"
+			"AbilityBehavior"        	"DOTA_ABILITY_BEHAVIOR_NO_TARGET | DOTA_ABILITY_BEHAVIOR_NOT_LEARNABLE"
+			"AbilityTextureName" 			"invoker_empty1"
+			"MaxLevel" 								"0"
+
+		}
+
+
+
+	"invoker_alacrity_of_zecora"
+	{
+		"BaseClass"             		"ability_lua"
+		"ScriptFile"					"AddonScripts/spells/Alacrity/invoker_alacrity_of_zecora.lua"
+
+		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_UNIT_TARGET | DOTA_ABILITY_BEHAVIOR_NOT_LEARNABLE | DOTA_ABILITY_BEHAVIOR_DONT_RESUME_ATTACK | DOTA_ABILITY_BEHAVIOR_IGNORE_BACKSWING"	//DOTA_ABILITY_BEHAVIOR_NOT_LEARNABLE
+		"AbilityTextureName"			"chaos_knight_chaos_strike"	//"invoker_alacrity"
+		"MaxLevel" 						"0"
+
+		// Unit Targeting
+		//-------------------------------------------------------------------------------------------------------------
+		"AbilityUnitTargetTeam"			"DOTA_UNIT_TARGET_TEAM_BOTH"	//"DOTA_UNIT_TARGET_TEAM_FRIENDLY"
+		"AbilityUnitTargetType"			"DOTA_UNIT_TARGET_CREEP | DOTA_UNIT_TARGET_HERO"
+		"SpellImmunityType"				"SPELL_IMMUNITY_ALLIES_YES"
+
+		"AbilityUnitTargetFlags"		"DOTA_UNIT_TARGET_FLAG_MAGIC_IMMUNE_ENEMIES"
+
+		"AbilityCastAnimation" 			"ACT_DOTA_CAST_ALACRITY"
+	}
+	"invoker_forge_spirits"
+	{
+		"BaseClass"             		"ability_lua"
+		"ScriptFile"					"AddonScripts/spells/ForgeSpirit/invoker_forge_spirits.lua"
+
+		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_NO_TARGET | DOTA_ABILITY_BEHAVIOR_IMMEDIATE | DOTA_ABILITY_BEHAVIOR_NOT_LEARNABLE | DOTA_ABILITY_BEHAVIOR_IGNORE_BACKSWING"	//DOTA_ABILITY_BEHAVIOR_NOT_LEARNABLE
+		"AbilityTextureName"			"invoker_forge_spirit"
+		"MaxLevel" 						"0"
+
+		"AbilityCastAnimation" 			"ACT_DOTA_ATTACK_STATUE"
+	}
+		"forge_spirits_life_giving_fire"
+		{
+			"BaseClass"             		"ability_lua"
+			"ScriptFile"					"AddonScripts/spells/ForgeSpirit/forge_spirits_life_giving_fire.lua"
+
+			"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_PASSIVE | DOTA_ABILITY_BEHAVIOR_NOT_LEARNABLE"	//DOTA_ABILITY_BEHAVIOR_NOT_LEARNABLE
+			"AbilityTextureName"			"ember_spirit_flame_guard"
+			"MaxLevel" 						"0"
+		}
+		"forge_spirits_owner_link"
+		{
+			"BaseClass"             		"ability_lua"
+			"ScriptFile"					"AddonScripts/spells/ForgeSpirit/forge_spirits_owner_link.lua"
+
+			"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_PASSIVE | DOTA_ABILITY_BEHAVIOR_NOT_LEARNABLE"	//DOTA_ABILITY_BEHAVIOR_NOT_LEARNABLE
+			"AbilityTextureName"			"dark_seer_surge"
+			"MaxLevel" 						"0"
+		}
+	"invoker_fireBalls_hephaestus"
+	{
+		"BaseClass"             		"ability_lua"
+		"ScriptFile"					"AddonScripts/spells/FireBalls/invoker_fireBalls_hephaestus.lua"
+
+		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_POINT | DOTA_ABILITY_BEHAVIOR_NOT_LEARNABLE | DOTA_ABILITY_BEHAVIOR_IGNORE_BACKSWING"	//DOTA_ABILITY_BEHAVIOR_NOT_LEARNABLE
+		"AbilityTextureName"			"phoenix_launch_fire_spirit"
+		"MaxLevel" 						"0"
+
+		//"AbilityCastAnimation" 			"ACT_DOTA_ATTACK_STATUE"
+	}
+
+	"invoker_spellsteal_rubiks"
+	{
+		"BaseClass"             		"ability_lua"
+		"ScriptFile"					"AddonScripts/spells/SpellSteal/invoker_spellsteal_rubiks.lua"
+
+		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_UNIT_TARGET | DOTA_ABILITY_BEHAVIOR_NOT_LEARNABLE | DOTA_ABILITY_BEHAVIOR_DONT_RESUME_ATTACK | DOTA_ABILITY_BEHAVIOR_IGNORE_BACKSWING"
+		"AbilityTextureName"			"spectre_reality"
+		"MaxLevel" 						"0"
+
+		// Unit Targeting
+		//-------------------------------------------------------------------------------------------------------------
+		"AbilityUnitTargetTeam"			"DOTA_UNIT_TARGET_TEAM_BOTH"
+		"AbilityUnitTargetType"			"DOTA_UNIT_TARGET_BASIC | DOTA_UNIT_TARGET_HERO | DOTA_UNIT_TARGET_BUILDING"
+		"AbilityUnitTargetFlags"		"DOTA_UNIT_TARGET_FLAG_FOW_VISIBLE"
+
+
+		"SpellImmunityType"				"SPELL_IMMUNITY_ALLIES_YES"
+
+
+		//"AbilityCastAnimation" 			"ACT_DOTA_CAST_ALACRITY"
+	}
+		"invoker_spellsteal_rubiks_select"
+		{
+			"BaseClass"             		"ability_lua"
+			"ScriptFile"					"AddonScripts/spells/SpellSteal/invoker_spellsteal_rubiks_select.lua"
+
+			"AbilityBehavior"        "DOTA_ABILITY_BEHAVIOR_TOGGLE | DOTA_ABILITY_BEHAVIOR_NOT_LEARNABLE"
+			"AbilityTextureName" 			"invoker_empty1"
+			"MaxLevel" 								"0"
+		}
+		"invoker_spellsteal_rubiks_apply"
+		{
+			"BaseClass"             		"ability_lua"
+			"ScriptFile"					"AddonScripts/spells/SpellSteal/invoker_spellsteal_rubiks_apply.lua"
+			
+			"AbilityBehavior"        "DOTA_ABILITY_BEHAVIOR_NO_TARGET | DOTA_ABILITY_BEHAVIOR_NOT_LEARNABLE | DOTA_ABILITY_BEHAVIOR_IMMEDIATE | DOTA_ABILITY_BEHAVIOR_IGNORE_CHANNEL | DOTA_ABILITY_BEHAVIOR_UNRESTRICTED | DOTA_ABILITY_BEHAVIOR_IGNORE_PSEUDO_QUEUE"
+			"AbilityTextureName" 			"rubick_spell_steal"
+			"MaxLevel" 								"0"
+		}
+
+
+
+	"tower_knowledge_concentrator"
+	{
+		"BaseClass"             "ability_lua"
+		"ScriptFile"						"AddonScripts/spells/tower_knowledge_concentrator/tower_knowledge_concentrator.lua"
+
+		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_PASSIVE | DOTA_ABILITY_BEHAVIOR_NOT_LEARNABLE"
+		"AbilityTextureName"		"oracle_purifying_flames"
+		"MaxLevel" 							"2"
+	}
+
+
+
+
+	"spell_test"
+	{
+		"BaseClass"             		"ability_lua"
+		"ScriptFile"					"AddonScripts/spells/test/spell_test.lua"
+
+		//"AbilityType"					"DOTA_ABILITY_TYPE_ULTIMATE"
+		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_NO_TARGET | DOTA_ABILITY_BEHAVIOR_IMMEDIATE | DOTA_ABILITY_BEHAVIOR_IGNORE_CHANNEL | DOTA_ABILITY_BEHAVIOR_UNRESTRICTED | DOTA_ABILITY_BEHAVIOR_IGNORE_PSEUDO_QUEUE | DOTA_ABILITY_BEHAVIOR_AUTOCAST"
+	    "AbilityTextureName"    		"invoker_invoke"
+		"SpellDispellableType"			"SPELL_DISPELLABLE_NO"
+		"MaxLevel"						"4"
+		"RequiredLevel"					"-3"
+		//"AbilityCastPoint"				"0.075"
+
+		"AbilityCooldown"				"20"//"7 4 1 0"
+		//"AbilitySharedCooldown" ""
+		"AbilityManaCost"				"0"//"55 40 25 10"
+	}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	"obel_restoring"
+	{
+		"BaseClass"             		"ability_lua"
+		"ScriptFile"					"spells/obel_restoring.lua"
+
+		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_PASSIVE | DOTA_ABILITY_BEHAVIOR_NOT_LEARNABLE"	//DOTA_ABILITY_BEHAVIOR_NOT_LEARNABLE
+		"AbilityTextureName"			"omniknight_purification"
+		"MaxLevel" 						"0"
+	}
+	//Icon Tree - "monkey_king_mischief"
+	//Icon gravitation (stone) - "brewmaster_earth_pulverize"
+	//Icon gravitation - "rubick_telekinesis", "rubick_telekinesis_land"
+	//Icon Memorable communication - "wisp_tether"
+	//Icon alchemical lap - "templar_assassin_psionic_trap", "warlock_shadow_word", "shadow_demon_soul_catcher"
+		//Icon Destroy lap - "templar_assassin_trap"
+	//Icon Purge - "satyr_trickster_purge"
+	//Icon napalm debuff - "ember_spirit_sleight_of_fist"
+	//Icon Forge Aura - "brewmaster_fire_permanent_immolation", "ember_spirit_flame_guard"
+	//Icon Forge movespeed - "dark_seer_surge"
+	//Icon Wisp Astral - "enchantress_untouchable"
+		//Icon Wisp - "wisp_overcharge"
+		//Icon Wisp Tree buff - "Eyes in the Forest"
+	//Icon Illusions - "dark_seer_wall_of_replica", "spectre_haunt"
+	//Icon Invisible - "Ghost Walk"
+	//Icon rearm - "tinker_rearm"
+	//Icon alacrity - "chaos_knight_chaos_strike"
+
+	//Icon Tower aura - "chen_penitence", "omniknight_purification"
+	//Icon Button - "techies_focused_detonate"
+}

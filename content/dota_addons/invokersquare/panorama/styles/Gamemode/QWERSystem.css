@@ -1,0 +1,160 @@
+
+
+/*.QWERSystem
+{
+	vertical-align: bottom;
+	horizontal-align: right;	
+	/*margin-bottom: 0px;
+	margin-right: 0px;*/
+	/*background-color:	rgba(255,255,255,0.5);
+}
+*/
+#CheckBoxClosing
+{
+	vertical-align: center;
+}
+#MainTitlePanel
+{
+	flow-children: right-wrap;	
+}
+.QWERSystem
+{
+	background-image:	url("s2r://panorama/images/hud/reborn/ability_bg_psd.vtex");
+	background-size: 100%;
+	border-radius: 7px;
+	vertical-align: bottom;
+	horizontal-align: center;
+	margin-bottom: 225px; //195px;
+	//margin-right: 100px;
+
+	flow-children: down-wrap;
+
+	transform: translateX(100%);
+	transition-property: opacity, transform;
+	transition-duration: 0.12s;
+}
+.Showstate
+{
+	transform: translateX(0px);	
+}
+
+
+#QWERSystemLabel
+{
+	vertical-align: bottom;
+	horizontal-align: right;
+	margin-left: 15px;
+	font-size: 25px;
+	color: rgb(155, 165, 255);
+}
+#ClosePanel
+{
+	horizontal-align: right;
+	/*background-color: rgba(255,0,0,0.8);*/
+	width: 35px;
+	height: 35px;
+}
+#CloseLabel
+{
+	vertical-align: bottom;
+	horizontal-align: right;
+	margin-right: 5px;
+	font-size: 23px;
+	color: yellow;
+
+}
+#CloseLabel:hover
+{
+	font-size: 24px;
+	border: 2px solid #217e04;	
+}
+.Title
+{
+	/*background-color: black;*/
+	/*vertical-align: top;
+	horizontal-align: center;*/
+	width: 100%;
+}
+
+.TitlePanel
+{
+	//vertical-align: top;
+	//background-color: rgba(255,255,255,0.05);
+	height: 30px;
+}
+
+	#TitleLabel
+	{
+		/*width: 30px;
+		height: 30px;*/
+
+		/*background-color: black;
+		vertical-align: top;
+		horizontal-align: center;*/
+		height: 30px;
+		//width: 20px;
+		//background-color: rgba(0,255,0,1);
+		vertical-align: center;
+		horizontal-align: center;
+		font-size: 30px;	
+		color: white;
+		margin-right: 4px;
+		margin-left: 4px;
+	}
+
+#Spell_Blocks
+{
+	flow-children: right-wrap;	
+}
+
+.Spell_Block
+{
+	margin-left: 2px;
+	margin-right: 2px;
+	margin-bottom: 2px;
+	border-radius: 5px;
+	background-color: rgba(0,0,0,0.8);
+	/*box-shadow: inset #333333b0 0px 0px 2px 4px;*/
+	flow-children: down-wrap;	
+	border: 2px solid rgb(17, 17, 17); //rgb(23, 99, 0)
+}
+
+.Spell_Block_Title
+{
+	margin-left: 5px;
+	margin-top: 3px;
+	margin-right: 5px;
+
+	/*background-color: rgba(0,0,255,0.3);*/
+	flow-children: right-wrap;	
+}
+
+.Spell_Array
+{
+	margin-left: 2px;
+	margin-top: 5px;
+	margin-right: 2px;
+	margin-bottom: 2px;
+	/*background-color: rgba(255,0,0,0.3);*/
+	flow-children: right-wrap;	
+}
+
+.OriginSpell
+{
+	width: 35px;
+	height: 35px;
+	background-color: rgba(0,0,0,0);
+	margin: 2px;
+	/*border-radius: 10px;
+	/*background-image:	url("s2r://panorama/images/hud/reborn/ability_bg_psd.vtex");*/
+}
+.OriginSpell:hover
+{
+	brightness: 1.5;
+	/*border-radius: 10px;
+	/*background-image:	url("s2r://panorama/images/hud/reborn/ability_bg_psd.vtex");*/
+}
+#OriginSpellImage
+{
+	border-radius: 7px;
+}

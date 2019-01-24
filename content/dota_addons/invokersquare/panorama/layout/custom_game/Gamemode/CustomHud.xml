@@ -1,0 +1,8 @@
+<root>
+	<scripts>
+		<include src="file://{resources}/scripts/BaseLib/utils.js" />
+		<include src="file://{resources}/scripts/Gamemode/ExpSystem.js"/> 
+	</scripts>
+  <Panel>
+  </Panel>
+</root>

@@ -1,0 +1,48 @@
+<root>
+	<styles>
+		<include src="file://{resources}/styles/Gamemode/QWERSystem.css" />
+		<include src="file://{resources}/styles/dotastyles.css" />
+	</styles>
+	<scripts>
+		<include src="file://{resources}/scripts/BaseLib/utils.js" />
+		<include src="file://{resources}/scripts/Gamemode/QWERSystem.js" />
+	</scripts>
+	<snippets>
+		<snippet name="Spell_Block">
+			<Panel class="Spell_Block">
+				<Panel id="Spell_Block_Title_id" class="Spell_Block_Title">
+				</Panel>
+				<Panel id="Spell_Array_id" class="Spell_Array">
+				</Panel>
+			</Panel>
+		</snippet>
+		<snippet name="SnippetTitle">
+			<Panel class="TitlePanel">
+				<Label id="TitleLabel"/>
+			</Panel>
+		</snippet>
+		<snippet name="MainDotaImage">
+			<Panel class="OriginSpell">
+				<Button id="SpellButton">
+					<DOTAAbilityImage id="OriginSpellImage"/>
+				</Button>
+			</Panel>
+		</snippet>
+	</snippets>
+	<Panel class="QWERSystem" >
+		<Panel id="Title" class="Title">
+			<Panel id="MainTitlePanel">
+				<Label id="QWERSystemLabel" text="Spell Book" />
+				<ToggleButton id="CheckBoxClosing" class="DemoButton">
+					<Label id="CheckBoxClosingLabel" text="Closing"/>
+				</ToggleButton>
+			</Panel>
+			<!--Panel id="ClosePanel">
+				<Button id="CloseButton">
+					<Label id="CloseLabel" text=">>"/>
+				</Button>
+			</Panel-->
+		</Panel>
+		<Panel id="Spell_Blocks"/>
+	</Panel>
+</root>

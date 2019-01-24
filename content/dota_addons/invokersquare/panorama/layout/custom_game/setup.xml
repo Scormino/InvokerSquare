@@ -1,0 +1,13 @@
+<root>
+	<styles>
+		<include src="file://{resources}/styles/setup.css" />		
+	</styles>
+	<scripts>
+		<include src="file://{resources}/scripts/BaseLib/utils.js" />
+		<include src="file://{resources}/scripts/BaseLib/setup.js" /> 
+	</scripts-->
+	<Panel>
+
+	</Panel>
+</root>
+

@@ -1,0 +1,17 @@
+"CustomEvents"
+{
+	
+	"ExecByEnt"
+	{
+    "nEntIndex"				  "long"
+    "nEntIndex2"				"long"
+		"sFuncExec"					"string"
+	}
+
+  "SyncGlobalTable"
+  {
+    "sTableName"        "string"
+    "sKey"              "string"
+    "nIsStringTable"    "short"
+  }
+}

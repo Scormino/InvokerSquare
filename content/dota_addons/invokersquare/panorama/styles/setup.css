@@ -1,0 +1,244 @@
+#DefaultUI
+{
+  height: 100%;
+  flow-children: right; 
+}
+#CGSetup
+{
+  width: 100%;
+  height: 100%;
+  horizontal-align: left;
+
+  margin-right: 8px; 
+  margin-left: 8px;
+  margin-bottom: 8px; 
+  
+  //background-color: gradient( linear, 100% 0%, 100% 100%, from( #111111a1 ), color-stop( 0.01, #20262edd ), color-stop( 0.2, #20262edd ), to( #000000dd ) );
+  //box-shadow: black -4px -4px 8px 8px;
+  //background-color:
+  flow-children: down; 
+}
+  @keyframes 'LeftPanelsAppear'
+  {
+    0%
+    {
+      transform: translatex( -200% );
+    }
+
+    100%
+    {
+      transform: translatex( 0px );
+    }
+  }    
+  .CustomPanels
+  {
+    background-color: gradient( linear, 100% 0%, 100% 100%, from( #111111a1 ), color-stop( 0.01, #20262edd ), color-stop( 0.2, #20262edd ), to( #000000dd ) );
+    box-shadow: black -2px -2px 5px 5px;
+  }
+  /*#PanelHeading
+  {
+    height: 60px;
+    //width: 100%;
+    //background-color: red;
+
+    animation-name: TopPanelsAppear;
+    animation-duration: 1.25s;
+  }*/
+  #PanelContentContainer
+  {
+    height: 100%;
+    width: 100%;
+    //background-color: blue;
+    flow-children: right; 
+
+  }
+    #PanelGameModeInfo
+    {
+      height: 100%;
+      width: 350px;
+      margin-bottom: 235px;
+
+      flow-children: down;
+
+      animation-name: LeftPanelsAppear;
+      animation-duration: 1.25s;
+
+      //background-color: aqua;
+    }
+      @keyframes 'TopPanelsAppear'
+      {
+        0%
+        {
+          transform: translatey( -200% );
+        }
+    
+        100%
+        {
+          transform: translatey( 0% );
+        }
+      }
+      #AddonNameLabel
+      {
+        margin-left: 60px;
+        //vertical-align: center;
+        horizontal-align: left;
+        font-size: 40px;
+        text-transform: uppercase;
+  
+        
+      }
+  
+      #PanelGameModeChange
+      {
+        width: 100%;
+        height: 200px;
+        flow-children: right-wrap;    
+      }
+        #LabelGamemode
+        {
+          margin-left: 8px;
+          padding-top: 11px;
+          //vertical-align: center;
+          horizontal-align: left;
+          font-size: 26px;
+          text-transform: uppercase;
+          }
+        #DropDownGameMode
+        {
+          width: 100%;
+          font-size: 50px;
+          //horizontal-align: right;
+
+          margin-right: 4px;
+          margin-top: 8px;
+        }
+        
+        /*.RadioButtonsBlock
+        {
+          margin-top: 10px;
+          margin-left: 10px;
+          margin-right: 45px;
+          margin-bottom: 0px;
+        }*/
+    #PanelGameMode
+    {
+      width: 100%;
+      height: 100%;
+
+      margin-left: 8px;
+      //margin-right: 8px;
+
+      //animation-name: BotPanelsAppear;
+      //animation-duration: 1.25s;
+
+      //background-color: aqua;
+      flow-children: up; 
+
+    }
+      #PanelBotGameMode
+      {
+        height: 229px;
+        width: 100%;
+
+        vertical-align: bottom;
+        //background-color: red;
+        
+        animation-name: BotPanelsAppear;
+        animation-duration: 1.25s;
+        }
+      #PanelTopGameMode
+      {
+        height: 100%;
+        width: 100%;
+        
+        margin-bottom: 8px;
+
+        animation-name: TopPanelsAppear;
+        animation-duration: 1.25s;
+
+        flow-children: down; 
+      }
+        #PanelTacticContainer
+        {
+          max-height: 75%;
+          width: 100%;
+          margin: 8px;
+
+          //background-color: green;
+          flow-children: right;
+        }
+          #PanelMapContainer
+          {
+            //height: 100%;
+            max-width: 80%;
+            overflow: scroll;
+
+            background-color: blue;
+            //flow-children: right;
+            border-radius: 15px;
+
+            box-shadow: black -2px -2px 5px 5px;
+          }
+            #MapImage{
+              height: 500px;
+              width: 500px;  
+              
+              //background-color: black;
+            }
+              .PanelMapSlot
+              {
+                //height: 50px;
+                //width: 50px;
+
+                //box-shadow: rgba(0, 0, 100, 1) -2px -2px 6px 6px;
+                border-radius: 7px;
+                //background-color: blue;
+              }
+              .AllowMapSlot
+              {
+                height: 50px;
+                width: 50px;
+                background-image: url("s2r://panorama/images/custom_game/empty_slot_avatar_png.vtex");
+                background-size: 100%;
+              }
+              .NoAllowMapSlot
+              {
+                height: 25px;
+                width: 25px;
+                background-color: rgb(117, 117, 117);
+              }
+                #MapSlotImage
+                {
+                  height: 100%;
+                  width: 100%;
+                }
+          #PanelTeamInfo
+          {
+            height: 100%;
+            width: 100%; 
+  
+            margin-left: 8px;
+            //background-color: yellow;
+          }
+
+        #PanelGameModeModeInfo
+        {
+          height: 100%;
+          width: 100%; 
+
+          //background-color: green;
+        }
+
+
+      @keyframes 'BotPanelsAppear'
+      {
+        0%
+        {
+          transform: translatey( 200% );
+        }
+        
+        100%
+        {
+          transform: translatey( 0% );
+        }
+      }
