@@ -1,2 +1,2 @@
-# InvokerSquare
-Это репозиторий для разработки аддона (Invoker)^2 для Dota 2
+# (Invoker)^2
+Repo for the development of (Invoker)^2, a mod for Valve's Dota 2.
