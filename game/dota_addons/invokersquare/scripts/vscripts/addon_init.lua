@@ -69,3 +69,5 @@ function SyncGlobalTable(hData)
   _G[sKey] = hGlobalTab
 end
 ListenToGameEvent('SyncGlobalTable', SyncGlobalTable, nil)
+
+--gg
