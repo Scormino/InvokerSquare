@@ -43,3 +43,5 @@ resource/overviews/*
 
 #Github dump
 *.stackdump
+
+#Lenivex commit
