@@ -1,0 +1,45 @@
+# Ignore everything
+/*
+
+# Except the relevant folders
+!content/
+content/*
+!content/dota_addons/
+content/dota_addons/*
+!content/dota_addons/invokersquare/
+
+!game/
+game/*
+!game/dota_addons/
+game/dota_addons/*
+!game/dota_addons/invokersquare/
+
+# Cache crap that Valve autogenerates
+*.bin
+*.cfg
+*.soc
+*.tmp
+
+# Compiled formats
+*.vagrp_c
+*.vpcf_c
+*.vtex_c
+*.vmdl_c
+*.vsndevts_c
+*.vsnd_c
+*.vmat_c
+*.vjs_c
+*.vxml_c
+*.vcss_c
+*.vmdl_c
+*.vagrp_c
+*.vmesh_c
+
+# Map files
+*.vpk
+
+# Map overviews
+resource/overviews/*
+
+#Github dump
+*.stackdump
